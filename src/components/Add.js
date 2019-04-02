@@ -12,7 +12,8 @@ class Add extends Component {
 		const data = new FormData(event.target);
 		var tmp = true;
 		this.props.contacts.forEach( x => {
-			if(data.get("number") == x.number){
+			console.log(x)
+			if(data.get("phone") == x.phone){
 				tmp = false;
 			}
 		})
